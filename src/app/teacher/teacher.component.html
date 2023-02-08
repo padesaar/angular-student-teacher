@@ -1,4 +1,39 @@
-<h2>{{teacherTitle}}</h2>
+<style>
+  .card {
+    all: unset;
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    height: 40px;
+    width: 200px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    line-height: 24px;
+
+  }
+
+  .card-container .card:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .card.card-small {
+    height: 16px;
+    width: 168px;
+    position: center;
+    margin-left: 90px;
+  }
+
+
+</style>
+
+
+
+<h2 id="teacherTitle">{{teacherTitle}}</h2>
 <table>
   <thead>
   <tr>
