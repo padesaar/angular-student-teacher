@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Teacher} from "../models/Teacher";
+import {Student} from "../Student";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'school-application';
+
+  teachers: Teacher[] = [];
+  teacherTitle = 'List of teachers';
+
+  students: Student[] = [];
+  studentTitle = 'List of students'
 }
