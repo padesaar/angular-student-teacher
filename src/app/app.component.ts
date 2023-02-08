@@ -49,16 +49,16 @@ export class AppComponent implements OnInit {
   }
 
   addTeacher() {
-      let tFirstName = this.tFirstNames.at(Math.random()*this.tFirstNames.length);
-      let tLastName = this.tLastNames.at(Math.random()*this.tLastNames.length);
-      let tSpeciality = this.tSpecialities.at(Math.random()*this.tSpecialities.length);
-      let tAddress = this.tAddresses.at(Math.random()*this.tAddresses.length);
-      let tEmail = this.tEmails.at(Math.random()*this.tEmails.length);
+    let tFirstName = this.tFirstNames.at(Math.random()*this.tFirstNames.length);
+    let tLastName = this.tLastNames.at(Math.random()*this.tLastNames.length);
+    let tSpeciality = this.tSpecialities.at(Math.random()*this.tSpecialities.length);
+    let tAddress = this.tAddresses.at(Math.random()*this.tAddresses.length);
+    let tEmail = this.tEmails.at(Math.random()*this.tEmails.length);
 
-      // @ts-ignore
-      this.teachers.push(new Teacher(tFirstName,tLastName,tSpeciality,tAddress, tEmail));
+    // @ts-ignore
+    this.teachers.push(new Teacher(tFirstName,tLastName,tSpeciality,tAddress, tEmail));
 
-}
+  }
   addStudent() {
     let sFirstName = this.sFirstNames.at(Math.random()*this.sFirstNames.length);
     let sLastName = this.sLastNames.at(Math.random()*this.sLastNames.length);
