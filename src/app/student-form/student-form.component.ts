@@ -8,7 +8,7 @@ import {NgForm} from "@angular/forms";
   styleUrls: ['./student-form.component.css']
 })
 export class StudentFormComponent {
-  isShowForm: boolean = true;
+  isShowForm: boolean = false;
   students: Student[] = [];
 
   firstName: string = '';
@@ -22,5 +22,9 @@ export class StudentFormComponent {
   addStudent(studentForm: NgForm) {
     this.students.push(new Student(this.firstName, this.lastName, this.age, this.address, this.email));
     studentForm.reset();
+  }
+
+  showStudentForm() {
+    this.isShowForm = true;
   }
 }

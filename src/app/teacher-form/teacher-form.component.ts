@@ -9,7 +9,7 @@ import {NgForm} from "@angular/forms";
   styleUrls: ['./teacher-form.component.css']
 })
 export class TeacherFormComponent {
-  isShowForm: boolean = true;
+  isShowForm: boolean = false;
   teachers: Teacher[] = [];
 
   firstName: string = '';
@@ -25,4 +25,7 @@ export class TeacherFormComponent {
     teacherForm.reset();
   }
 
+  showTeacherForm() {
+    this.isShowForm = true;
+  }
 }

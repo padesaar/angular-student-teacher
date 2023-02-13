@@ -1,3 +1,5 @@
+<a href="#" (click)="showStudentForm()">Add new student</a>
+
 <div id="studentList" *ngIf="students.length > 0">
   <h1>List of dynamic students</h1>
   <ul>
@@ -8,7 +10,7 @@
 
 <div id="studentFormDiv" *ngIf="isShowForm">
   <h3>Add a new student</h3>
-  <form id="studnetForm" #studentForm="ngForm" (ngSubmit)="addStudent(studentForm)">
+  <form id="studentForm" #studentForm="ngForm" (ngSubmit)="addStudent(studentForm)">
     <label for="firstName">First name:</label>
     <input type="text" name="firstName" id="firstName" [(ngModel)]="firstName"/>
     <br/>
