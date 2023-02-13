@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Student} from "../../Student";
+import {Student} from "../../models/Student";
 
 @Component({
   selector: 'app-student',
@@ -18,6 +18,7 @@ export class StudentComponent implements OnInit {
   @Input() sAges: number[] = [13, 16, 18];
   @Input() sAddresses: string[] = ['Narva', 'Viljandi', 'Finland'];
   @Input() sEmails: string[] = ['looy@gmail.com', 'is@mail.ee', 'rand@gmail.com'];
+  isShowForm: boolean = false;
 
 
   getStudents(): Student[] { //function return dog array

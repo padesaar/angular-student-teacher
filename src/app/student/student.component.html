@@ -56,4 +56,6 @@
 </table>
 <br>
 <br>
-<button class="card card-small" (click)="addStudent()">Add Random Student</button>
+<button class="card card-small" (click)="addStudent()" *ngIf="isShowForm">Add Random Student</button>
+
+<app-student-form></app-student-form>

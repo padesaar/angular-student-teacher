@@ -16,6 +16,7 @@ export class TeacherComponent implements OnInit {
 
  @Input() tAddresses: string[] = ['Narva', 'Viljandi', 'Finland'];
  @Input() tEmails: string[] = ['looney@gmail.com', 'this@mail.ee', 'random@gmail.com'];
+  isShowForm: boolean = false;
 
   ngOnInit(): void {
     this.teachers = this.getTeachers();
