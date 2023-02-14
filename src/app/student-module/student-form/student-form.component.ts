@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Student} from "../../models/Student";
+import {Student} from "../../../models/Student";
 import {NgForm} from "@angular/forms";
 
 @Component({
